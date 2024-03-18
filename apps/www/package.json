@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "contentlayer build && pnpm build:registry && next build",
-    "build:registry": "ts-node --esm --project ./tsconfig.scripts.json ./scripts/build-registry.ts",
-    "seed:tasks": "ts-node --esm --project ./tsconfig.scripts.json ./app/examples/tasks/data/seed.ts",
+    "build:registry": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.ts",
+    "seed:tasks": "tsx --tsconfig ./tsconfig.scripts.json ./app/examples/tasks/data/seed.ts",
     "start": "next start -p 3001",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -58,6 +58,7 @@
     "embla-carousel-autoplay": "8.0.0-rc15",
     "embla-carousel-react": "8.0.0-rc15",
     "geist": "^1.1.0",
+    "input-otp": "^1.0.1",
     "jotai": "^2.1.0",
     "lodash.template": "^4.5.0",
     "lucide-react": "0.288.0",
